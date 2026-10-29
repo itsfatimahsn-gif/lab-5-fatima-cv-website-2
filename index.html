@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fatima Hassan | Interactive CV</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <!-- LEFT PROFILE PANEL -->
+        <aside class="profile-panel">
+
+            <div class="availability">
+                <span class="status-dot"></span>
+                AVAILABLE FOR OPPORTUNITIES
+            </div>
+
+            <div class="profile-photo">
+                <img src="images/profile.jpg" alt="Fatima Hassan"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+
+                <div class="photo-fallback">FH<span>.</span></div>
+            </div>
+
+            <p class="eyebrow">HELLO, I'M</p>
+
+            <h1>Fatima<br><span>Hassan.</span></h1>
+
+            <p class="role">Digital Media &amp; Web Professional</p>
+
+            <p class="intro">
+                A motivated professional with experience in digital media,
+                WordPress, email marketing, document editing, and virtual assistance.
+                I enjoy learning new tools and creating quality work.
+            </p>
+
+            <div class="profile-divider"></div>
+
+            <div class="profile-detail">
+                <span class="detail-label">LOCATION</span>
+                <span>Lahore, Pakistan</span>
+            </div>
+
+            <div class="profile-detail">
+                <span class="detail-label">EDUCATION</span>
+                <span>BS Computer Science</span>
+            </div>
+
+            <a class="email-link" href="mailto:itsfatima.hsn@hotmail.com">
+                <span>Let's connect</span>
+                <span class="email-arrow">↗</span>
+            </a>
+
+            <div class="profile-footer">
+                <span>PERSONAL CV</span>
+                <span class="footer-dot">✦</span>
+                <span>2026</span>
+            </div>
+
+        </aside>
+
+
+        <!-- RIGHT CONTENT PANEL -->
+        <section class="content-panel">
+
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">MY PROFESSIONAL PROFILE</p>
+
+                    <h2>Explore my profile<span>.</span></h2>
+
+                    <p class="top-description">
+                        A closer look at my education, experience and skills.
+                    </p>
+                </div>
+
+                <div class="section-count">
+                    <span id="sectionNumber">01</span>
+                    <span class="count-divider">/</span>
+                    <span>06</span>
+                </div>
+
+            </header>
+
+
+            <div class="section-label">
+                <span class="label-line"></span>
+                SELECT A SECTION TO EXPLORE
+            </div>
+
+
+            <!-- INTERACTIVE CARDS -->
+            <nav class="card-grid" aria-label="CV sections">
+
+                <button class="cv-card active"
+                        type="button"
+                        data-section="intro"
+                        aria-pressed="true">
+
+                    <span class="card-top">
+                        <span class="card-icon">✳</span>
+                        <span class="card-number">01</span>
+                    </span>
+
+                    <span class="card-title">Introduction</span>
+                    <span class="card-description">A little about me</span>
+                    <span class="card-arrow">↗</span>
+
+                </button>
+
+
+                <button class="cv-card"
+                        type="button"
+                        data-section="education"
+                        aria-pressed="false">
+
+                    <span class="card-top">
+                        <span class="card-icon">◇</span>
+                        <span class="card-number">02</span>
+                    </span>
+
+                    <span class="card-title">Education</span>
+                    <span class="card-description">My academic journey</span>
+                    <span class="card-arrow">↗</span>
+
+                </button>
+
+
+                <button class="cv-card"
+                        type="button"
+                        data-section="experience"
+                        aria-pressed="false">
+
+                    <span class="card-top">
+                        <span class="card-icon">▤</span>
+                        <span class="card-number">03</span>
+                    </span>
+
+                    <span class="card-title">Experience</span>
+                    <span class="card-description">My professional work</span>
+                    <span class="card-arrow">↗</span>
+
+                </button>
+
+
+                <button class="cv-card"
+                        type="button"
+                        data-section="skills"
+                        aria-pressed="false">
+
+                    <span class="card-top">
+                        <span class="card-icon">✧</span>
+                        <span class="card-number">04</span>
+                    </span>
+
+                    <span class="card-title">Skills</span>
+                    <span class="card-description">My professional toolkit</span>
+                    <span class="card-arrow">↗</span>
+
+                </button>
+
+
+                <button class="cv-card"
+                        type="button"
+                        data-section="languages"
+                        aria-pressed="false">
+
+                    <span class="card-top">
+                        <span class="card-icon">文</span>
+                        <span class="card-number">05</span>
+                    </span>
+
+                    <span class="card-title">Languages</span>
+                    <span class="card-description">Languages I know</span>
+                    <span class="card-arrow">↗</span>
+
+                </button>
+
+
+                <button class="cv-card"
+                        type="button"
+                        data-section="contact"
+                        aria-pressed="false">
+
+                    <span class="card-top">
+                        <span class="card-icon">↗</span>
+                        <span class="card-number">06</span>
+                    </span>
+
+                    <span class="card-title">Contact</span>
+                    <span class="card-description">Let's connect</span>
+                    <span class="card-arrow">↗</span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- INFORMATION DISPLAY -->
+            <section class="details-panel" aria-live="polite">
+
+                <div class="details-heading">
+
+                    <div>
+                        <p class="eyebrow" id="detailEyebrow">
+                            01 / PROFILE
+                        </p>
+
+                        <h3 id="detailTitle">A little about me</h3>
+                    </div>
+
+                    <span class="gold-star">✳</span>
+
+                </div>
+
+                <div id="detailContent" class="detail-content">
+
+                    <p>
+                        I am a motivated professional interested in technology,
+                        digital media, and online communication. My experience
+                        includes WordPress development, email marketing,
+                        document editing, and virtual assistance.
+                    </p>
+
+                    <p>
+                        I enjoy learning new tools, solving problems, and
+                        producing organized, high-quality work.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <footer class="content-footer">
+
+                <span>DESIGNED WITH PURPOSE</span>
+
+                <span>
+                    LAHORE, PAKISTAN
+                    <b>✦</b>
+                </span>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
